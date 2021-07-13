@@ -1,0 +1,29 @@
+div .container{
+    margin: 1rem;
+    color: #485160;
+}
+
+.card-img-left{
+    border: 2px solid #485160;
+    width: 6rem;
+}
+
+.span-title{
+    font-size: 12px !important;
+    color: #fe6100;
+}
+
+.section-profile .span-subtitle{
+    font-size: 18px !important;
+}
+
+.edit-profile{
+    color: #ed7425 !important;
+	border-color: #ed7425 !important;
+}
+
+.edit-profile:hover{
+    color: #fff !important;
+	border-color: #fff !important;
+    background-color: #ed7425 !important;
+}

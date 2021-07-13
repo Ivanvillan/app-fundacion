@@ -1,0 +1,74 @@
+div .container{
+    color: #485160;
+}
+
+.section-list-users{
+    margin-top: 1.3rem;
+}
+
+.card{
+    cursor: pointer;
+}
+
+@media (min-width: 768px){
+    .user-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+.card-body{
+    padding: 10px !important;
+}
+
+.img-user{
+    max-width: 4.5rem;
+    padding-right: 0 !important;
+}
+
+.card-img-left{
+    width: 5rem;
+    border: 2px solid #485160;
+}
+
+.user-data{
+    margin-left: 1rem;
+}
+
+.card-title{
+    display: block;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.card-text{
+    font-size: 12px !important;
+    font-style: italic;
+}
+
+.new-user{
+    color: #ed7425 !important;
+	border-color: #ed7425 !important;
+}
+
+.new-user:hover{
+    color: #fff !important;
+	border-color: #fff !important;
+    background-color: #ed7425 !important;
+}
+
+.border-style{
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    height: 28px !important;
+}
+
+.border-style-search{
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    height: 28px !important;
+    border-color: #DEE2E6 !important;
+}

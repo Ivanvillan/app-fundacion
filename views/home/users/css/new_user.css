@@ -1,0 +1,32 @@
+div .container{
+    margin: 1rem;
+    color: #485160;
+}
+
+form .border-style{
+    border: 1px solid #fe6100;
+    border-radius: 8px;
+    height: 30px;
+}
+
+form #input-birthdate{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+form .btn-style{
+    height: 40px;
+    width: 120px;
+    background-color: #ed7425;
+    color: #fff;
+    margin-top: 20px;
+}
+
+form .btn-style:hover{
+    color: #FFF;
+    background-color: #f47d31;
+}
+
+form .btn-loading{
+    font-size: 14px !important;
+}

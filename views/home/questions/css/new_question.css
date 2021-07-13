@@ -1,0 +1,84 @@
+div .container{
+    margin: 1rem;
+    color: #485160;
+}
+
+.border-style{
+    border-radius: 10px !important;
+    font-size: 13px !important;
+}
+
+.section-form{
+    margin: 1.5rem;
+}
+
+@media (min-width: 768px){
+    .btn-confirm{
+        position:fixed !important;
+        bottom:1rem !important;
+        right:1rem !important;
+    }
+}
+
+.btn-confirm{
+    color: #ed7425 !important;
+    border-color: #ed7425 !important;
+}
+
+.btn-confirm:hover{
+    color: #fff !important;
+	border-color: #fff !important;
+    background-color: #ed7425 !important;
+}
+
+button .confirm-question{
+    color: #ed7425 !important;
+	border-color: #ed7425 !important;
+}
+
+button .confirm-question:hover{
+    color: #fff !important;
+	border-color: #fff !important;
+    background-color: #ed7425 !important;
+}
+
+.custom-control-label:before{
+    border-color: #fe6100 !important;
+  }
+  .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color: #fe6100 !important;
+  }
+  .custom-control-input:active~.custom-control-label::before{
+    background-color:#fe6100;
+}
+  .custom-checkbox .custom-control-input:focus~.custom-control-label::before{
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem #fd9c5c !important; 
+}
+
+form .btn-style{
+    background-color: #fe6100 !important;
+    border-radius: 20px !important;
+    width: 5px !important;
+    height: 25px !important;
+}
+
+form .icon-plus{
+    position: relative;
+    bottom: 7px;
+    right: 5px;
+    font-size: 11px !important;
+    background-color: #fe6100 !important;
+    color: #fff !important;
+}
+
+.btn-sendAnswer{
+    height: 40px;
+    width: 120px;
+    background-color: #ed7425 !important;
+    color: #fff !important;
+}
+
+.btn-sendAnswer:hover{
+    color: #FFF !important;
+    background-color: #f47d31 !important;
+}

@@ -1,0 +1,53 @@
+div .container{
+    margin: 1rem;
+    color: #485160;
+}
+
+.section-form{
+    margin: 1.50rem;
+}
+
+form .border-style{
+    border: 1px solid #fe6100;
+    border-radius: 8px;
+}
+
+form #input-title, form #input-date1, form #input-date2{
+    height: 30px;
+}
+
+form #input-category{
+    font-size: 14px !important;
+    height: 35px;
+    width: 320px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    form #input-category{
+        font-size: 14px !important;
+        height: 35px;
+        width: 200px !important;
+    }
+}
+
+form #input-date1, form #input-date2{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+form .btn-style{
+    height: 40px;
+    width: 120px;
+    background-color: #ed7425;
+    color: #fff;
+    margin-top: 20px;
+}
+
+form .btn-style:hover{
+    color: #FFF;
+    background-color: #f47d31;
+}
+
+form .btn-loading{
+    font-size: 14px !important;
+}

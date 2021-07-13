@@ -1,0 +1,148 @@
+div .container{
+    margin: 1rem;
+    color: #485160;
+}
+
+.section-response{
+    margin: 1.50rem;
+}
+
+.span-style{
+    font-weight: bold;
+    font-size: 13px !important;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #fe6100;
+    cursor: pointer;
+  }
+  
+  input[type='radio']:checked {
+    box-shadow: 0 0 0 2px #fe6100;
+  }
+  
+  input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 65%;
+    height: 65%;
+    margin: 20% auto;
+    border-radius: 50%;
+  }
+  
+  input[type='radio']:checked:before {
+    background: #485160;
+  }
+
+  .form-check-label{
+      margin-top: 3px !important;
+      cursor: pointer;
+  }
+
+  .form-check{
+    cursor: pointer;
+  }
+
+.classbox {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+.spanbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border: 1px solid #fe6100;
+  border-radius: 3px;
+}
+
+.classbox input:active ~ .spanbox {
+  background-color: #fe6100;
+}
+
+.classbox input:checked ~ .spanbox {
+  background-color: #fe6100;
+}
+
+.spanbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.classbox input:checked ~ .spanbox:after {
+  display: block;
+}
+
+.classbox .spanbox:after {
+  left: 4px;
+  bottom: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (min-width: 768px){
+  .btn-confirm{
+      position:fixed !important;
+      bottom:1rem !important;
+      right:1rem !important;
+  }
+}
+
+.btn-confirm{
+  color: #ed7425 !important;
+  border-color: #ed7425 !important;
+}
+
+.btn-confirm:hover{
+  color: #fff !important;
+border-color: #fff !important;
+  background-color: #ed7425 !important;
+}
+
+button .confirm-response{
+  color: #ed7425 !important;
+border-color: #ed7425 !important;
+}
+
+button .confirm-response:hover{
+  color: #fff !important;
+border-color: #fff !important;
+  background-color: #ed7425 !important;
+}
+
+.btn-sendAnswer{
+  height: 40px;
+  width: 100px;
+  background-color: #ed7425 !important;
+  color: #fff !important;
+}
+
+.btn-sendAnswer:hover{
+  color: #FFF !important;
+  background-color: #f47d31 !important;
+}
+
+.border-style{
+  border-radius: 10px !important;
+  font-size: 13px !important;
+}

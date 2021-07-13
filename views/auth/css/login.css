@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.row-divider{
+    margin: 0;
+    padding: 0;
+}
+
+form .border-style{
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    height: 45px;
+}
+
+.text-style{
+    color: #485160 !important;
+}
+
+form .btn-style{
+    height: 45px;
+    background-color: #ed7425;
+    color: #fff;
+}
+
+form .btn-style:hover{
+    color: #FFF;
+    background-color: #f47d31;
+}
+
+form .btn-loading{
+    font-size: 14px !important;
+}
+
+@media (min-width: 768px){
+    .col-img img{
+        max-width: 100%;
+        max-height: 600px;
+    }
+}
+@media (max-width: 768px){
+    .col-img img{
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+        max-height: 400px;
+    }
+}

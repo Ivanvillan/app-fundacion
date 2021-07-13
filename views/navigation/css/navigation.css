@@ -1,0 +1,439 @@
+body{
+    font-family: Helvetica, sans-serif;
+    font-weight: 400 !important;   
+    font-size: 12px !important;
+    color: #fff !important;
+    overflow-x: hidden !important;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 15rem;
+    max-width: 15rem;
+    background: #f47d31;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    min-width: 130px;
+    max-width: 130px;
+    text-align: center;
+}
+
+#sidebar .profile{
+    min-height: 6rem;
+    background: #ed7425;
+    padding: 2rem 2rem;
+}
+
+#sidebar .p-avatar{
+    max-width: 5.5rem;
+    padding-right: 0 !important;
+}
+
+#sidebar .avatar{
+    width: 6rem;
+    border: 3px solid #485160;
+    object-fit: cover;
+}
+
+/* ocultar cuando esta toggle */
+#sidebar.active .p-username {
+    display: none;
+}
+
+#sidebar .p-username{
+    padding: 0 !important;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+#sidebar .type-user{
+    font-size: 11px !important;
+}
+
+/* mostrar cuando esta toggle */
+/* #sidebar.active .sidebar-header {
+    display: block;
+} */
+
+#sidebar.active ul li a {
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+#sidebar.active ul li a i {
+    margin-right: 0;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar.active .dropdown-toggle::after {
+    top: auto;
+    bottom: 10px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+/* #sidebar .sidebar-header strong {
+    display: none;
+    font-size: 1.8em;
+} */
+
+#sidebar ul li a {
+    padding: 9px;
+    transition: all 0.3s;
+    padding-left: 1.25rem;
+    display: block;
+    margin: 0 !important;
+}
+#sidebar ul li a:hover {
+    background: #ed7425;
+}
+
+#sidebar ul li a {
+    padding-left: 2.75rem !important;
+}
+#sidebar.active ul li a {
+    padding-left: 0 !important;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    background: #ed7425;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a{
+    padding-left: 2.75rem !important;
+    background: #da5b0a;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    color: #da5b0a;
+}
+
+a.article,
+a.article:hover {
+    background: #ed7425 !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#content .navbar{
+    height: 70px !important;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        min-width: 130px;
+        max-width: 130px;
+        text-align: center;
+        margin-left: -130px !important;
+    }
+    .dropdown-toggle::after {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    #sidebar.active {
+        margin-left: 0 !important;
+    }
+
+    #sidebar.active div .menu-admin{
+        display: block;
+    }
+    #sidebar.active div .menu-user{
+        display: block;
+    }
+    #sidebar.active ul li a {
+        padding-left: 0 !important;
+    }
+    /* #sidebar .sidebar-header h3,
+    #sidebar .CTAs {
+        display: none;
+    }
+    #sidebar .sidebar-header strong {
+        display: block;
+    } */
+    #sidebar ul li a {
+        padding: 9px 9px;
+        text-align: center;
+        font-size: 0.85em;
+    }
+    #sidebar ul li a span {
+        font-size: 0.85em;
+    }
+    #sidebar ul li a i {
+        margin-right: 0;
+        display: block;
+        margin-bottom: 5px;
+    }
+    #sidebar ul ul a {
+        padding: 9px !important;
+    }
+    #sidebar {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+    #sidebar.active .p-username {
+        display: none;
+    }
+    #sidebar ul li.active>a,
+    a[aria-expanded="true"] {
+        background: #ed7425;
+    }
+    #sidebar.active .general{
+        margin: 0;
+    }
+    #sidebar.active .menu-general{
+        width: 5rem;
+        padding-left: 0;
+        margin: 0;
+    }
+    #sidebar.active .menu-general span{
+        display: none;
+    }
+    #sidebar.active .menu-general .news{
+        margin-left: 2.50rem;
+    }
+    #sidebar.active .menu-general .position{
+        margin-left: 2.50rem;
+        margin-bottom: 1rem;
+    }
+    #sidebar .menu-general .news-noti{
+        color: #fff;
+        margin-left: 0px;
+        display: none;
+        /* font-size: 20px; */
+    }   
+    #sidebar.active .title-admin{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #sidebar.active .admin-section{
+        margin: 0;
+    }
+    #sidebar .menu-admin{ 
+        display: block !important;
+    }
+    #sidebar .menu-user{ 
+        display: block !important;
+    }
+}
+.button-toggle{
+    background-color: #F8F9FA !important;
+    color: #485160;
+}
+.button-toggle:hover{
+    background-color: #F8F9FA !important;
+    color: #485160;
+}
+
+.btn-logout{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 30px;
+    margin-top: 2.7rem;
+    margin-left: 2rem;
+}
+.fa-logout{
+    position: relative;
+    bottom: 9px;
+    right: 4px;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.16)
+}
+
+.span-logout{
+    margin-top: 2rem;
+    margin-left: 0.2rem;
+    cursor: pointer;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.16)
+}
+
+#sidebar.active .span-logout{
+    display: none !important;
+}
+#sidebar.active .btn-logout{
+    margin-left: 3.4rem;
+    margin-bottom: 20px;
+}
+
+#sidebar .type-menu{
+    margin: 1.2rem 1.2rem 0.5rem;
+}
+
+#sidebar .general{
+    margin: 2rem 1.2rem 0.5rem;
+}
+#sidebar.active .general{
+    margin: 0;
+}
+
+#sidebar .menu-general{
+    width: 16rem;
+    padding-left: 1.25rem;
+    margin: 0.75rem;
+}
+#sidebar.active .menu-general{
+    width: 5rem;
+    padding-left: 0;
+    margin: 0;
+}
+
+#sidebar.active .menu-general span{
+    display: none;
+}
+#sidebar.active .menu-general .news{
+    margin-left: 2.50rem;
+}
+#sidebar.active .menu-general .position{
+    margin-left: 2.50rem;
+    margin-bottom: 1rem;
+}
+
+#sidebar .menu-general .news-noti{
+    color: rgb(0, 169, 0);
+    margin-left: 5px;
+    /* font-size: 20px; */
+}
+#sidebar.active .menu-general .news-noti{
+    color: #fff;
+    margin-left: 0px;
+    display: none;
+}
+
+#sidebar.active .title-admin{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#sidebar .menu-admin{
+    max-width: 2.75rem;
+    margin-left: 1rem;
+    display: flex;
+}
+#sidebar.active .menu-admin{
+    max-width: 2.75rem;
+    margin-left: 2.5rem;
+    display: block;
+}
+
+#sidebar.active .menu-admin img{
+    margin-top: 0.5rem;
+}
+#sidebar .menu-user{
+    max-width: 2.75rem;
+    margin-left: 1rem;
+    display: flex;
+}
+#sidebar.active .menu-user{
+    max-width: 2.75rem;
+    margin-left: 2.5rem;
+    display: block;
+}
+
+#sidebar.active .menu-user img{
+    margin-top: 0.5rem;
+}
+
+#sidebar .admin-avatar{
+    border: 3px solid #485160;
+    margin-right: 7px;
+}
+
+#sidebar .admin-section{
+    margin: 1.2rem 1.2rem;
+}
+
+#sidebar .bg-edit{
+    position: relative;
+    left: 48px;
+    bottom: 22px;
+    height: 22px;
+    width: 22px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+#sidebar .p-edit{
+    margin-left: 6px;
+    margin-top: 5px;
+    color: #485160;
+}
+#sidebar.active .p-edit{
+    margin-left: 2px;
+    margin-top: 5px;
+    color: #485160;
+}
+
+.a-disabled{
+    cursor: default;
+    pointer-events: none;
+}
+
+
+

@@ -1,0 +1,37 @@
+div .container{
+    color: #485160;
+}
+
+.list-quizz-user{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bg-footer{
+    background-color: #f47d31 !important;
+    color: #fff;
+}
+
+.list-quizz-user .text-span{
+    color: #f47d31;
+}
+
+.list-quizz-user .text-style{
+    color: #313131 !important;
+    font-size: 12px !important;
+}
+
+.btn-show{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #fff;
+}
+
+.icon-show{
+    position: relative;
+    left: 10px;
+    color: #f47d31;
+}

@@ -1,0 +1,59 @@
+/* div .container{
+    color: #485160;
+}
+
+@media (min-width: 768px){
+    .section-avatarV1{
+        margin-top: 1rem;
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+        border: 3px solid #485160;
+        border-radius: 10px;
+    }
+    .section-avatarV2{
+        margin-top: 1rem;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+        border: 3px solid #485160;
+        border-radius: 10px;
+    }
+    .section-avatarV3{
+        margin-top: 1rem;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+        border: 3px solid #485160;
+        border-radius: 10px;
+    }
+}
+
+.section-img{
+    width: 5rem;   
+}
+.section-img img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid #485160;
+}
+.section-img:hover{
+    transform: scale(1.1);
+}
+
+.add-avatar{
+    color: #ed7425 !important;
+	border-color: #ed7425 !important;
+}
+
+.add-avatar:hover{
+    color: #fff !important;
+	border-color: #fff !important;
+    background-color: #ed7425 !important;
+}
+ */
